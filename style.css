@@ -1,89 +1,89 @@
-body{
+body {
     margin: 0;
     padding: 0;
-  
 }
-.header{
+
+.header {
     height: 80px;
+    overflow: hidden;
 }
-.banner1{
+
+.banner1 {
     background: black;
     display: flex;
     height: 40px;
     display: flex;
     flex-direction: column;
-   
 }
 
-.banner2{
+.banner2 {
     background: yellow;
-
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.bannnerChild{
-    background:black;
-    height:100% ;
-    width:1200px ;
+
+.bannnerChild {
+    background: black;
+    height: 100%;
+    width: 1200px;
     display: flex;
     flex-direction: row;
     align-self: center;
-    }
-.bannnerChild2{
-        background:;
-        height:30px ;
-        width:1200px ;
-        display: flex;
-    }
-.box1{
+}
+
+.bannnerChild2 {
+    height: 30px;
+    width: 1200px;
+    display: flex;
+}
+
+.box1 {
     /* background: red; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-     flex: 1;
- 
-  }      
-.box2{
-    flex:0.55;
+    flex: 1;
+}
+
+.box2 {
+    flex: 0.55;
     /* background: cornflowerblue; */
     color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-.box3{
     display: flex;
-    flex:1;
-  background: chartreuse;
-  flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.box3 {
+    display: flex;
+    flex: 1;
+    /* background: chartreuse; */
+    flex-direction: row;
 }
-.boxHome{
- 
-   
-    background-image:url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2 );
-   background-position:3 1 ;
-   width:156px;
-   height: 30px;
-   align-items: center;
+
+.boxHome {
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: 3 1;
+    width: 156px;
+    height: 30px;
+    align-items: center;
 }
-.Km{
-  
+
+.Km {
     color: yellow;
     font-size: 12px;
-    
-} 
-.boxHcm{
+}
+
+.boxHcm {
     color: gold;
     font-size: 12px;
     text-align: center;
-    
 }
-.wrap_seach{
+
+.wrap_seach {
     height: 100%;
     position: relative;
     display: flex;
@@ -91,66 +91,116 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
-.search{
-   padding:2px 5px;
+
+.search {
+    padding: 2px 5px;
     height: 75%;
     border-radius: 5px;
     border-width: 0px;
 }
+
 .search:focus {
     outline: none;
-  }
-  .timkiem{
+}
+
+.timkiem {
     position: absolute;
     right: 10px;
-      background-image:url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2) ;
-     background-position:  -160px 0;
-     width: 20px;
-     height: 20px;
-    
-    }
-    .gioHang{
-        display: flex;
-        width: 50%;
-        height: 80%;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
-       border: white 1px solid;
-       border-radius: 5px;
-      margin-right: 20px;
-    }
-    .icon_cart{
-        background-image:url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2) ;
-     background-position:   -263px -28px;
-     width: 28px;
-     height: 22px;
-   
-    }
-    .history{
-        font-size: 12px;
-    }
-.gioHang:hover{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -160px 0;
+    width: 20px;
+    height: 20px;
+}
+
+.gioHang {
+    display: flex;
+    width: 50%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border: white 1px solid;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.icon_cart {
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -263px -28px;
+    width: 28px;
+    height: 22px;
+}
+
+.history {
+    font-size: 12px;
+}
+
+.gioHang:hover {
     background-color: grey;
 }
-.viettel{
 
+.viettel {
     font-size: 13px;
     color: white;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-right: honeydew 1px solid;
+    padding-right: 10px;
+    padding-left: 10px;
 }
-.CN{
- 
+
+.CN {
     font-size: 12px;
     color: white;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    
-    margin: 5px;
-
+    padding-left: 10px;
+    border-right: honeydew 1px solid;
+    padding-right: 10px;
+}
+.HD {
+    font-size: 12px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    border-right: honeydew 1px solid;
+    padding-right: 10px;
+}
+.game {
+    font-size: 12px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.game:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.HD:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.CN:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.icon_dt {
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: 0 -90px;
+    width: 14px;
+    height: 21px;
+}
+.DT {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
