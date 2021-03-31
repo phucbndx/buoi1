@@ -1,198 +1,156 @@
 body{
-    background: pink;
     margin: 0;
     padding: 0;
-
+  
 }
-#banner{
-    height: 70px;
-    background:yellowgreen ;
-    border: black 2px solid;
+.header{
+    height: 80px;
+}
+.banner1{
+    background: black;
     display: flex;
-    text-decoration: row;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.banner2{
+    background: yellow;
+
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannnerChild{
+    background:black;
+    height:100% ;
+    width:1200px ;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    }
+.bannnerChild2{
+        background:;
+        height:30px ;
+        width:1200px ;
+        display: flex;
+    }
+.box1{
+    /* background: red; */
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 15px;
-}
-#smallbanner{
-    width:20% ;
-    background: brown;
-    height: 5vh;
-    display: flex;
-    justify-content: space-around;
-   
-    border: black 1px solid; 
-}
-#smallbanner2{
-    width:20% ;
-    background: brown;
-    height: 5vh;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    border: black 1px solid; 
-}
-#lagrebanner{
-    width:40% ;
-    background: brown;
-    height: 5vh;
-    border: black 1px solid;
-}
-#bannertitle{
-  
-    font-size: 15px;
-}
-#main{
-    
-    display: flex;
-    margin-top: 10px;
-}
-
-#left{
-   display: flex;
     flex-direction: row;
-  
-    background: red;
-   margin: 5px;
-    width: 75%;
-   height: 400px;
-   border: black 2px solid;
-
-}
-#right{
-    display: flex;
-    flex-direction: column;
-   width: 50vh;
-}
-#righttop{
-background: lemonchiffon;
-margin: 5px;
-
-height: 190px;
-border: black 2px solid;
+     flex: 1;
+ 
+  }      
+.box2{
+    flex:0.55;
+    /* background: cornflowerblue; */
+    color: white;
 display: flex;
-flex-direction: column ;
-flex-direction: row;
+justify-content: center;
+align-items: center;
+
+}
+.box3{
+    display: flex;
+    flex:1;
+  background: chartreuse;
+  flex-direction: row;
+
+}
+.boxHome{
+ 
    
+    background-image:url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2 );
+   background-position:3 1 ;
+   width:156px;
+   height: 30px;
+   align-items: center;
 }
-#rightbuttom{
-    background: cornflowerblue;
-    border: black 2px solid;
-    
-    height: 195px;
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-}
-#maintop{
-    background: lightseagreen;
-    width: 60vh;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    border: black 2px solid;
-    margin: 30px;
-}
-
-#chia1{
-    background: ivory;
-    width: 12vh;
-    height: 6vh;
-    display: flex;
-    border: black 1px solid;
-    display: flex;
-    flex-direction: row-reverse;
-    
-}
-#chia{
-    background: ivory;
-    width: 12vh;
-    height: 6vh;
-    display: flex;
-    border: black 1px solid
-}
-#maintop1{
-    background:limegreen;
-    width: 60vh;
-    height: 30vh;
-    display: flex;
-    flex-direction: row;
-    border: black 2px solid;
-    margin: 30px;
-    float:left;
-    
-}
-#mainttop2{
-    background:chocolate;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    border: black 2px solid;
-    margin: 20px;
-    align-items: center;
-    justify-content:space-evenly;
-}
-
-
-#footer{
-    display: flex;
-    background: crimson;
-    width: 25%;
-    height: 7vh;
-    flex-direction: row;
-    border: black 1px solid;
-
-}
-#footer2{
-    display: flex;
-    background: crimson;
-    width: 50vh;
-    height: 7vh;
-    flex-direction: row;
-    border: black 1px solid;
-
-}
-#footer3{
-    display: flex;
-    background: crimson;
-    width: 50vh;
-    height: 7vh;
-    flex-direction: row;
-    border: black 1px solid;
-
-}
-#mainttop3{
-    background:crimson;
-    width:100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    border: black 2px solid;
-    margin: 20px;
-    align-items: center;
-    justify-content:space-evenly;
+.Km{
   
+    color: yellow;
+    font-size: 12px;
+    
+} 
+.boxHcm{
+    color: gold;
+    font-size: 12px;
+    text-align: center;
+    
 }
-#row2{
-    display: flex;
-    background: chocolate;
-    width: 95vh;
-
-    height: 7vh;
-    flex-direction: row;
-    border: black 1px solid;
-
-}
-#row1{
-    display: flex;
-    background: chocolate;
-    width: 95vh;
-
-    height: 7vh;
+.wrap_seach{
+    height: 100%;
+    position: relative;
     display: flex;
     flex-direction: row;
-    border: black 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+   padding:2px 5px;
+    height: 75%;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.search:focus {
+    outline: none;
+  }
+  .timkiem{
+    position: absolute;
+    right: 10px;
+      background-image:url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2) ;
+     background-position:  -160px 0;
+     width: 20px;
+     height: 20px;
+    
+    }
+    .gioHang{
+        display: flex;
+        width: 50%;
+        height: 80%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+       border: white 1px solid;
+       border-radius: 5px;
+      margin-right: 20px;
+    }
+    .icon_cart{
+        background-image:url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2) ;
+     background-position:   -263px -28px;
+     width: 28px;
+     height: 22px;
    
+    }
+    .history{
+        font-size: 12px;
+    }
+.gioHang:hover{
+    background-color: grey;
+}
+.viettel{
+
+    font-size: 13px;
+    color: white;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.CN{
+ 
+    font-size: 12px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 5px;
+
 }

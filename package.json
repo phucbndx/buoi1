@@ -5,6 +5,6 @@
   "repository": "git@github.com:phucbndx/buoi1.git",
   "license": "MIT",
   "scripts": {
-    "phuc": "browser-sync start --watch --server --file '*'"
+    "start": "browser-sync start --watch --server --file '*'"
   }
 }
