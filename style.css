@@ -9,7 +9,7 @@ body{
 .banner1{
     background: black;
     display: flex;
-    height: 30px;
+    height: 40px;
     display: flex;
     flex-direction: column;
    
@@ -18,7 +18,7 @@ body{
 .banner2{
     background: yellow;
 
-    height: 30px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
