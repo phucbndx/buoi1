@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, "DejaVu Sans", "Liberation Sans", Freesans,
+        sans-serif;
+    font-size: 14px;
 }
 
 .header {
@@ -15,18 +18,20 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.banner {
+}
 .banner2 {
     background: yellow;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .bannnerChild {
     background: black;
-    height: 100%;
+    height: 40px;
     width: 1200px;
     display: flex;
     flex-direction: row;
@@ -34,9 +39,13 @@ body {
 }
 
 .bannnerChild2 {
-    height: 30px;
+    /* background: black; */
+    height: 40px;
     width: 1200px;
     display: flex;
+    flex-direction: row;
+    align-self: center;
+    /* justify-content: stretch; */
 }
 
 .box1 {
@@ -49,7 +58,7 @@ body {
 }
 
 .box2 {
-    flex: 0.55;
+    flex: 0.4;
     /* background: cornflowerblue; */
     color: white;
     display: flex;
@@ -94,7 +103,7 @@ body {
 
 .search {
     padding: 2px 5px;
-    height: 75%;
+    height: 70%;
     border-radius: 5px;
     border-width: 0px;
 }
@@ -114,8 +123,8 @@ body {
 
 .gioHang {
     display: flex;
-    width: 50%;
-    height: 80%;
+    width: 47%;
+    height: 70%;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
@@ -126,13 +135,14 @@ body {
 
 .icon_cart {
     background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
-    background-position: -263px -28px;
+    background-position: -144px -91px;
     width: 28px;
     height: 22px;
 }
 
 .history {
     font-size: 12px;
+    text-align: center;
 }
 
 .gioHang:hover {
@@ -182,25 +192,79 @@ body {
     justify-content: center;
     padding-right: 10px;
     padding-left: 10px;
+    border-right: white 1px solid;
 }
 .game:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 255);
+    color: black;
 }
 .HD:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 255);
+    color: black;
 }
 .CN:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 255);
+    color: black;
 }
 .icon_dt {
     background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
-    background-position: 0 -90px;
-    width: 14px;
-    height: 21px;
+    background-position: 0 -91px;
+    width: 13px;
+    height: 20px;
 }
-.DT {
+
+.icon-laptop {
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -245px 0px;
+    width: 39px;
+    height: 21px;
+    padding-right: 4px;
+}
+.icon_tablet {
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -43px -91px;
+    width: 16px;
+    height: 20px;
+    /* padding-right: 4px; */
+}
+.phukien {
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -60px -91px;
+    width: 22px;
+    height: 20px;
+    /* padding-right: 4px; */
+}
+.icon_tt {
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -102px -91px;
+    width: 14px;
+    height: 20px;
+    /* padding-right: 4px; */
+}
+
+.item {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding: 0 10px 0 4px;
+}
+.icon_smartwatch {
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -83px -91px;
+    width: 14px;
+    height: 20px;
+}
+.icon_pc {
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -118px -91px;
+    width: 23px;
+    height: 20px;
+}
+.item > span {
+    padding-left: 10px;
+}
+
+.item:hover {
+    background-color: rgba(255, 255, 255, 255);
 }
