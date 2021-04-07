@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: Helvetica, Arial;
     font-size: 14px;
+    background: #f0f0f0;
 }
 .header {
     height: 80px;
@@ -14,7 +15,7 @@ body {
     flex-direction: column;
 }
 .banner2 {
-    background: yellow;
+    background: #fed700;
     height: 40px;
     overflow: hidden;
 }
@@ -45,11 +46,11 @@ body {
     height: 30px;
 }
 .Km {
-    color: yellow;
+    color: #ffffff;
     font-size: 12px;
 }
 .Hcm {
-    color: gold;
+    color: #ffe500;
     font-size: 12px;
     text-align: center;
 }
@@ -156,5 +157,115 @@ body {
     padding-left: 10px;
 }
 i[class^="icon_"] {
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-image: url(/images/bannerTGDD.png);
+}
+
+.qc {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.left {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    background-image: url(/images/bann3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+}
+.right {
+    margin-left: 10px;
+    width: 400px;
+    height: 300px;
+}
+.price {
+    height: 50px;
+    width: 800px;
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    color: #7b7b7b;
+    font-family: Helvetica, Arial;
+    background: #ffffff;
+    justify-content: space-evenly;
+}
+.price p {
+    border-right: #e5e5e5 0.2px solid;
+    height: 60%;
+    padding-right: 30px;
+}
+.price p:last-child {
+    border-right: none;
+}
+.right figure {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+    background: #fff;
+}
+.right h2 {
+    float: left;
+    padding: 10px 20px 10px 10px;
+    background: #fdd504;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+.right h2::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 12px solid #fff;
+    border-top: 18px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.bannerqc1 {
+    width: 340px;
+    height: 75px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.bannerqc1 img {
+    width: 100px;
+    height: 57px;
+    margin: 0 10px 0 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font: 14px/18px Helvetica, Arial;
+}
+.right p:hover {
+    color: #288ad6;
+}
+.bannerqc2 {
+    margin-top: 10px;
+    width: 340px;
+    height: 110px;
+    overflow: hidden;
+    background: #fff;
+}
+.a52 {
+    width: 100%;
+    height: 110px;
+}
+.bannerqc3 {
+    margin-top: 10px;
+    width: 340px;
+    height: 110px;
+    overflow: hidden;
+    background: #fff;
+}
+.sanpham {
+    width: 1080px;
 }
