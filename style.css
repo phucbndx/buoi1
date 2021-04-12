@@ -161,7 +161,7 @@ i[class^="icon_"] {
 }
 
 .qc {
-    height: 500px;
+    height: 400px;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -178,7 +178,7 @@ i[class^="icon_"] {
 .right {
     margin-left: 10px;
     width: 400px;
-    height: 300px;
+    height: 400px;
 }
 .price {
     height: 50px;
@@ -195,6 +195,9 @@ i[class^="icon_"] {
     border-right: #e5e5e5 0.2px solid;
     height: 60%;
     padding-right: 30px;
+}
+.price p:first-child {
+    margin-left: 30px;
 }
 .price p:last-child {
     border-right: none;
@@ -228,7 +231,7 @@ i[class^="icon_"] {
     right: 0;
 }
 .bannerqc1 {
-    width: 340px;
+    width: 400px;
     height: 75px;
     overflow: hidden;
     background: #fff;
@@ -250,7 +253,7 @@ a {
 }
 .bannerqc2 {
     margin-top: 10px;
-    width: 340px;
+    width: 400px;
     height: 110px;
     overflow: hidden;
     background: #fff;
@@ -261,11 +264,79 @@ a {
 }
 .bannerqc3 {
     margin-top: 10px;
-    width: 340px;
+    width: 400px;
     height: 110px;
     overflow: hidden;
     background: #fff;
 }
 .sanpham {
-    width: 1080px;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+}
+.bannersp {
+    height: 50px;
+    width: 1200px;
+    border-bottom: #c1c1c1 0.5px solid;
+    font-size: 12px;
+    padding-left: 10px;
+    background: #ffffff;
+}
+.sp {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+.spchung {
+    width: 240px;
+    height: 450px;
+    background: #ffffff;
+    margin-right: 3px;
+}
+.sp img {
+    width: 200px;
+    height: 200px;
+    margin: 30px 0px 0px 20px;
+}
+.sp a {
+    height: 400px;
+}
+b {
+    color: #bf081f;
+    margin-left: 15px;
+}
+.sp img:hover {
+    margin-top: 10px;
+    transition: 0.6s;
+    margin-bottom: 20px;
+}
+.sp p {
+    margin-left: 15px;
+}
+.TG::after {
+    display: block;
+    content: "Trả góp 0%";
+    width: 70px;
+    height: 23px;
+    background: #fdd504;
+    text-align: center;
+    padding-top: 4px;
+    box-sizing: border-box;
+    font-size: 11.5px;
+}
+.TG {
+    padding: 10px;
+}
+.vn {
+    margin: 7px 0 0 10px;
+    width: 150px;
+    height: 30px;
+    background: linear-gradient(#c86dd7, #3023ae);
+    border-radius: 20px;
+}
+.text {
+    color: #fff;
+    font-size: 10.5px;
+    vertical-align: super;
 }
