@@ -213,7 +213,7 @@ i[class^="icon_"] {
 }
 .left {
     width: 800px;
-    height: 400px;
+    height: 350px;
     display: flex;
     cursor: pointer;
 }
@@ -255,8 +255,8 @@ i[class^="icon_"] {
     display: block;
     overflow: hidden;
     border-bottom: 1px solid #efefef;
-    height: 60px;
-    margin: 0px 0px 3px 0px;
+    height: 50px;
+    margin: 0px 0px 6px 0px;
 }
 .right img {
     width: 390px;
@@ -264,9 +264,9 @@ i[class^="icon_"] {
 .right h2 {
     float: left;
     justify-content: flex-start;
-    padding: 20px 30px 10px 20px;
+    padding: 18px 30px 10px 20px;
     background: #fdd504;
-    height: 60px;
+    height: 50px;
     font-size: 14px;
     font-weight: 600;
     color: #333;
@@ -279,8 +279,8 @@ i[class^="icon_"] {
     width: 0;
     height: 0;
     border-right: 20px solid #fff;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -297,7 +297,7 @@ i[class^="icon_"] {
     align-items: center;
 }
 .mr {
-    margin-bottom: 2px;
+    margin-bottom: 6px;
 }
 .bannerqc1 img {
     width: 100px;
@@ -380,6 +380,9 @@ b {
     height: 30px;
     background: linear-gradient(#c86dd7, #3023ae);
     border-radius: 20px;
+}
+.dm {
+    background: linear-gradient(#1e6dd8, #044cae);
 }
 .text {
     color: #fff;
@@ -495,4 +498,7 @@ b {
     margin-top: 15px;
     transition: 0.6s;
     margin-bottom: 35px;
+}
+.DM {
+    display: flex;
 }
