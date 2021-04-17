@@ -18,6 +18,7 @@ body {
     background: #fed700;
     height: 40px;
     overflow: hidden;
+    white-space: nowrap;
 }
 .flex {
     display: flex;
@@ -39,11 +40,16 @@ body {
 }
 .box3 {
     flex: 1;
+    white-space: nowrap;
 }
 .icon_home {
     background-position: 3 1;
     width: 156px;
     height: 30px;
+    cursor: pointer;
+}
+.contro {
+    cursor: pointer;
 }
 .Km {
     color: #ffffff;
@@ -78,6 +84,7 @@ body {
     background-position: -160px 0;
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 .gioHang {
     width: 47%;
@@ -95,24 +102,63 @@ body {
 }
 .history {
     text-align: center;
+    cursor: pointer;
+    font-size: 12px;
 }
 .gioHang:hover {
     background-color: grey;
+    cursor: pointer;
 }
 .box3 > div {
     height: 100%;
     display: flex;
     font-size: 12px;
     color: white;
-    padding: 0 10px 0 10px;
+    padding: 0 12px 0 16px;
     border-right: white 1px solid;
     text-align: center;
     align-items: center;
+}
+.maint {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ffe66b;
+    border-radius: 5px;
+    position: absolute;
+}
+.wave {
+    width: 10px;
+    height: 10px;
+    border-radius: 6px;
+    position: absolute;
+    border: 2px #ffe66b solid;
+    animation: 1.2s song linear infinite;
+}
+@keyframes song {
+    90% {
+        height: 20px;
+        width: 20px;
+        border-radius: 13px;
+        border: 3px rgba(255, 255, 0, 0) solid;
+    }
+    100% {
+        border: 3px rgba(255, 255, 0, 0) solid;
+    }
 }
 .box3 > div:hover,
 .item:hover {
     background-color: rgba(255, 255, 255, 255);
     color: black;
+    cursor: pointer;
 }
 .icon_dt {
     background-position: 0 -91px;
@@ -141,7 +187,7 @@ body {
 }
 .item {
     text-align: center;
-    padding: 0 10px 0 4px;
+    padding: 0 12px 0 4px;
 }
 .icon_smartwatch {
     background-position: -83px -91px;
@@ -154,31 +200,32 @@ body {
     height: 20px;
 }
 .item > span {
-    padding-left: 10px;
+    padding-left: 10.5px;
 }
 i[class^="icon_"] {
     background-image: url(/images/bannerTGDD.png);
 }
-
 .qc {
-    height: 400px;
+    height: 370px;
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
-
 .left {
     width: 800px;
     height: 400px;
     display: flex;
-    background-image: url(/images/bann3.png);
-    background-repeat: no-repeat;
-    background-size: 100% 90%;
+    cursor: pointer;
 }
 .right {
-    margin-left: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
     width: 400px;
     height: 400px;
+}
+.bannerqc1 span {
+    color: #9c9999;
+    font-size: 11px;
 }
 .price {
     height: 50px;
@@ -188,7 +235,6 @@ i[class^="icon_"] {
     text-align: center;
     color: #7b7b7b;
     font-family: Helvetica, Arial;
-    background: #ffffff;
     justify-content: space-evenly;
 }
 .price p {
@@ -202,13 +248,18 @@ i[class^="icon_"] {
 .price p:last-child {
     border-right: none;
 }
+.bg {
+    background: #fff;
+}
 .right figure {
     display: block;
     overflow: hidden;
     border-bottom: 1px solid #efefef;
     height: 60px;
-    background: #fff;
-    margin: 0px 0px 9.5px 0px;
+    margin: 0px 0px 3px 0px;
+}
+.right img {
+    width: 390px;
 }
 .right h2 {
     float: left;
@@ -235,16 +286,18 @@ i[class^="icon_"] {
     bottom: 0;
     right: 0;
 }
+.rutflex2 {
+    display: flex;
+    justify-content: center;
+}
 .bannerqc1 {
-    width: 400px;
     height: 90px;
     overflow: hidden;
-    background: #fff;
     display: flex;
     align-items: center;
 }
 .mr {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 .bannerqc1 img {
     width: 100px;
@@ -260,28 +313,13 @@ a {
     color: #288ad6;
 }
 .bannerqc2 {
-    /* margin-top: 10px; */
-    width: 400px;
-    height: 110px;
-    overflow: hidden;
-    background: #fff;
-}
-.a52 {
-    width: 100%;
-    height: 110px;
+    height: 95px;
 }
 .bannerqc3 {
-    /* margin-top: 10px; */
-    width: 400px;
-    height: 110px;
-    overflow: hidden;
-    background: #fff;
+    height: 95px;
 }
 .sanpham {
-    margin-top: 25px;
-
-    display: flex;
-    justify-content: center;
+    margin-top: 10px;
 }
 .bannersp {
     height: 50px;
@@ -289,26 +327,26 @@ a {
     border-bottom: #c1c1c1 0.5px solid;
     font-size: 12px;
     padding-left: 10px;
-    background: #ffffff;
+    box-sizing: border-box;
 }
 .sp {
     height: 450px;
-    display: flex;
-    justify-content: center;
 }
 .spchung {
     width: 240px;
     height: 450px;
     background: #ffffff;
-    margin-right: 3px;
+}
+.dthoai {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
 }
 .sp img {
     width: 200px;
     height: 200px;
     margin: 30px 0px 0px 20px;
-}
-.sp a {
-    height: 400px;
+    transition: 0.6s;
 }
 b {
     color: #bf081f;
@@ -318,7 +356,6 @@ b {
     margin-top: 10px;
     transition: 0.6s;
     margin-bottom: 20px;
-    transform-origin: 0.5s;
 }
 .sp p {
     margin-left: 15px;
@@ -349,13 +386,8 @@ b {
     font-size: 10.5px;
     vertical-align: super;
 }
-.sanpham2 {
-    display: flex;
-    justify-content: center;
-}
 .listlaptop {
     margin-top: 10px;
-    background: #ffffff;
     width: 1200px;
     height: 50px;
     display: flex;
@@ -368,20 +400,99 @@ b {
 .listlaptop a:hover {
     text-decoration: underline;
 }
-.laptop {
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-}
 .lap {
-    width: 150px;
-    height: 100px;
-    margin: 50px 10px 10px 10px;
+    margin: 70px 10px 10px 30px;
+    width: 180px;
+    height: 120px;
 }
-.br {
-    width: 65px;
-    height: ;
-    border-radius: 15px;
-    background: #ffffff;
+.laptopsp {
+    width: 1200px;
+    height: 450px;
+}
+.LaptopLon {
+    width: 480px;
+}
+.dungluong {
+    margin: 0 10px;
+}
+.dungluongChild {
+    border-radius: 5px;
+    color: #777;
+    font-size: 11px;
+    padding: 0 5px;
+    border: 1px solid #eee;
+}
+.qua b {
+    font-weight: bold;
+    color: black;
+    margin-left: 1px;
+}
+.laptopsp img {
+    width: 200px;
+    height: 150px;
+    margin: 50px 30px 10px 20px;
+    transition: 0.6s;
+}
+.listLap2 {
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.laptopsp p {
+    margin: 0 0 10px 10px;
+}
+.bd {
+    border-right: #eeeeee 1px solid;
+}
+.laptopsp a img:hover {
+    margin-top: 20px;
+    transition: 0.6s;
+    margin-bottom: 40px;
+}
+.sao {
+    padding: 0;
+    margin: 15px 10px 0;
+    display: flex;
+}
+.saosang {
+    background-image: url(/images/bannerTGDD.png);
+    background-position: -295px -30px;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+.saonua {
+    background-image: url(/images/bannerTGDD.png);
+    background-position: -423px -30px;
+    width: 12px;
+    height: 12px;
+}
+.saotoi {
+    background-image: url(/images/bannerTGDD.png);
+    background-position: -310px -30px;
+    width: 12px;
+    height: 12px;
+}
+.sao span {
+    color: #777777;
+    padding: 0 0 0 20px;
+    font-size: 12px;
+    line-height: normal;
+}
+.tablet a {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+}
+.listtablet img {
+    width: 180px;
+    height: 180px;
+}
+.tabletsp img {
+    margin: 40px 30px 10px 20px;
+    transition: 0.6s;
+}
+.tabletsp img:hover {
+    margin-top: 15px;
+    transition: 0.6s;
+    margin-bottom: 35px;
 }
