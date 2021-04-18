@@ -120,8 +120,8 @@ body {
     align-items: center;
 }
 .maint {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -129,29 +129,29 @@ body {
     margin-right: 10px;
 }
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background: #ffe66b;
-    border-radius: 5px;
+    border-radius: 6px;
     position: absolute;
 }
 .wave {
-    width: 10px;
-    height: 10px;
-    border-radius: 6px;
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 9px;
     position: absolute;
     border: 2px #ffe66b solid;
-    animation: 1.2s song linear infinite;
+    animation: 1.2s song ease-out infinite;
 }
 @keyframes song {
     90% {
         height: 20px;
         width: 20px;
-        border-radius: 13px;
-        border: 3px rgba(255, 255, 0, 0) solid;
+        border-radius: 15px;
+        border: 2px rgba(255, 255, 0, 1) solid;
     }
     100% {
-        border: 3px rgba(255, 255, 0, 0) solid;
+        border: 2px rgba(255, 255, 0, 1) solid;
     }
 }
 .box3 > div:hover,
@@ -501,4 +501,29 @@ b {
 }
 .DM {
     display: flex;
+}
+.phukien {
+    font-size: 13px;
+}
+.phukien_cacloai {
+    height: 400px;
+}
+.pk {
+    height: 400px;
+}
+.listAirport {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+}
+.listDongHo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+}
+.docquyen {
+    width: 45px;
+    height: 45px;
 }
