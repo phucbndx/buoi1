@@ -505,11 +505,8 @@ b {
 .phukien {
     font-size: 13px;
 }
-.phukien_cacloai {
-    height: 400px;
-}
 .pk {
-    height: 400px;
+    height: 450px;
 }
 .listAirport {
     display: flex;
@@ -518,6 +515,7 @@ b {
     box-sizing: border-box;
 }
 .listDongHo {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     padding: 0 20px 0 20px;
@@ -526,4 +524,60 @@ b {
 .docquyen {
     width: 45px;
     height: 45px;
+}
+.DatTruoc {
+    width: 100px;
+    background: #e91e63;
+    position: static;
+    margin: 20px 10px 5px;
+    color: white;
+    font-weight: unset;
+    text-align: center;
+    border-radius: 3px;
+}
+.GS {
+    background: linear-gradient(#ea2a06, #c60004);
+}
+.phukienchung {
+    position: relative;
+}
+.button {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: block;
+}
+.prev {
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    padding: 10px 0 10px 0;
+    border-radius: 0 5px 5px 0;
+    background: #fff;
+    width: 30px;
+    height: 40px;
+    color: #999;
+    font-size: 35px;
+    text-align: center;
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 15%);
+    cursor: pointer;
+}
+.next {
+    position: absolute;
+    right: 18%;
+    top: 0px;
+    padding: 10px 0 10px 0;
+    border-radius: 5px 0px 0px 5px;
+    background: #fff;
+    width: 30px;
+    height: 40px;
+    color: #999;
+    font-size: 35px;
+    text-align: center;
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 15%);
+    cursor: pointer;
+}
+.controls {
+    margin-top: 0px;
+    text-align: center;
 }
