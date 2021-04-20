@@ -535,6 +535,15 @@ b {
     text-align: center;
     border-radius: 3px;
 }
+.phukien_cacloai {
+    height: 400px;
+}
+.pk_giare {
+    height: 400px;
+}
+.smart {
+    height: 450px;
+}
 .GS {
     background: linear-gradient(#ea2a06, #c60004);
 }
@@ -543,14 +552,13 @@ b {
 }
 .button {
     position: absolute;
-    top: 40%;
-    width: 100%;
+    top: 120px;
+    width: 1200px;
     display: block;
 }
 .prev {
     position: absolute;
-    left: 30px;
-    top: 0px;
+
     padding: 10px 0 10px 0;
     border-radius: 0 5px 5px 0;
     background: #fff;
@@ -564,7 +572,7 @@ b {
 }
 .next {
     position: absolute;
-    right: 18%;
+    right: 0px;
     top: 0px;
     padding: 10px 0 10px 0;
     border-radius: 5px 0px 0px 5px;
@@ -576,8 +584,4 @@ b {
     text-align: center;
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 15%);
     cursor: pointer;
-}
-.controls {
-    margin-top: 0px;
-    text-align: center;
 }
