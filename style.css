@@ -129,10 +129,10 @@ body {
     margin-right: 10px;
 }
 .dot {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background: #ffe66b;
-    border-radius: 6px;
+    border-radius: 4px;
     position: absolute;
 }
 .wave {
@@ -147,11 +147,11 @@ body {
     90% {
         height: 20px;
         width: 20px;
-        border-radius: 15px;
-        border: 2px rgba(255, 255, 0, 1) solid;
+        border-radius: 11px;
+        border: 2px rgba(255, 255, 0, 0) solid;
     }
     100% {
-        border: 2px rgba(255, 255, 0, 1) solid;
+        border: 2px rgba(255, 255, 0, 0) solid;
     }
 }
 .box3 > div:hover,
@@ -297,7 +297,7 @@ i[class^="icon_"] {
     align-items: center;
 }
 .mr {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 .bannerqc1 img {
     width: 100px;
@@ -378,11 +378,11 @@ b {
     margin: 7px 0 0 10px;
     width: 150px;
     height: 30px;
-    background: linear-gradient(#c86dd7, #3023ae);
+    background: linear-gradient(to right, #c86dd7, #3023ae);
     border-radius: 20px;
 }
 .dm {
-    background: linear-gradient(#1e6dd8, #044cae);
+    background: linear-gradient(to right, #1e6dd8, #044cae);
 }
 .text {
     color: #fff;
@@ -545,7 +545,7 @@ b {
     height: 450px;
 }
 .GS {
-    background: linear-gradient(#ea2a06, #c60004);
+    background: linear-gradient(to right, yarn #ea2a06, #c60004);
 }
 .phukienchung {
     position: relative;
@@ -558,7 +558,6 @@ b {
 }
 .prev {
     position: absolute;
-
     padding: 10px 0 10px 0;
     border-radius: 0 5px 5px 0;
     background: #fff;
@@ -584,4 +583,41 @@ b {
     text-align: center;
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 15%);
     cursor: pointer;
+}
+#slideset2 {
+    height: 500px;
+    position: relative;
+}
+#slideset2 > * {
+    animation: 12s autoplay2 infinite linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+@keyframes autoplay2 {
+    0% {
+        opacity: 0;
+    }
+    4% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 1;
+    }
+    37.33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#slideset2 > *:nth-child(1) {
+    animation-delay: 0s;
+}
+#slideset2 > *:nth-child(2) {
+    animation-delay: 4s;
+}
+#slideset2 > *:nth-child(3) {
+    animation-delay: 8s;
 }
