@@ -211,11 +211,25 @@ i[class^="icon_"] {
     justify-content: center;
     margin-top: 10px;
 }
+.btn-buttom {
+    position: absolute;
+    top: 120px;
+    width: 800px;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+}
 .left {
     width: 800px;
     height: 350px;
     display: flex;
+    flex-direction: column;
     cursor: pointer;
+    position: relative;
+}
+.img_banner {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
 }
 .right {
     padding-left: 10px;
@@ -341,6 +355,7 @@ a {
     display: flex;
     justify-content: center;
     width: 1200px;
+    overflow: hidden;
 }
 .sp img {
     width: 200px;
@@ -564,7 +579,7 @@ b {
     width: 30px;
     height: 40px;
     color: #999;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 15%);
     cursor: pointer;
@@ -579,45 +594,146 @@ b {
     width: 30px;
     height: 40px;
     color: #999;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 15%);
     cursor: pointer;
 }
-#slideset2 {
-    height: 500px;
-    position: relative;
+.btx {
+    margin-top: 20px;
+    background: #ffffff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }
-#slideset2 > * {
-    animation: 12s autoplay2 infinite linear;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
+.btx-banner {
+    background: #008847;
+    height: 50px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
 }
-@keyframes autoplay2 {
-    0% {
-        opacity: 0;
-    }
-    4% {
-        opacity: 1;
-    }
-    33.33% {
-        opacity: 1;
-    }
-    37.33% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+.dot-style {
+    margin: 15px 0 15px 7px;
 }
-#slideset2 > *:nth-child(1) {
-    animation-delay: 0s;
+.btx-banner p {
+    color: #fff200;
+    font-weight: bold;
 }
-#slideset2 > *:nth-child(2) {
-    animation-delay: 4s;
+.btx-banner img {
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
 }
-#slideset2 > *:nth-child(3) {
-    animation-delay: 8s;
+.btx-banner span {
+    color: white;
+    margin-top: 12px;
+}
+.close {
+    margin-top: 12px;
+}
+.footer {
+    margin-top: 10px;
+    height: 200px;
+    background: #ffffff;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+.footerChild {
+    width: 1200px;
+    display: flex;
+    overflow: hidden;
+    color: #288ad6;
+}
+.foter1 {
+    flex: 1;
+}
+.footerChild p:hover {
+    color: black;
+    cursor: pointer;
+}
+.foter2 {
+    flex: 1;
+}
+.foter3 {
+    margin-top: 10px;
+    flex: 1;
+}
+.foter3 span {
+    color: #333;
+}
+.foter4 {
+    flex: 1;
+}
+.cuoi {
+    background: #f0f0f0;
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    padding: 12px 0;
+}
+.cuoi p {
+    margin: auto;
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+}
+.icon-BCT {
+    background-image: url(/images/bannerTGDD.png);
+    background-position: 0px -50px;
+    width: 110px;
+    height: 38px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.icon-VT {
+    background-image: url(/images/bannerTGDD.png);
+    background-position: -384px -49px;
+    width: 45px;
+    height: 38px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.khung-icon img {
+    margin-bottom: 8px;
+}
+.icon-fb {
+    margin: 20px 30px 0 30px;
+    border-right: 1px solid grey;
+    padding-right: 30px;
+}
+.fb {
+    background-image: url(/images/bannerTGDD.png);
+    background-position: 0 -30px;
+    width: 13px;
+    height: 13px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.yt {
+    background-image: url(/images/bannerTGDD.png);
+    background-position: -16px -30px;
+    width: 17px;
+    height: 13px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.web {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+    height: 120px;
+    clear: both;
+}
+.MA {
+    background-image: url(/images/bannerTGDD.png);
+}
+.DMX {
+    background-image: url(/images/bannerTGDD.png);
+
+    background-position: -34px -26px;
+    width: 106px;
+    height: 26px;
+    display: inline-block;
 }

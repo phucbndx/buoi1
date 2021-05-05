@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p>tao click</p>
+
+    <p id="demo"></p>
+
+    <button onclick="dung()">Stop time</button>
+    <button onclick="tiep()">chay tiep</button>
+    <button onclick="clickkk()">click</button>
+
+
+
+
+    <script>
+
+        let time = setInterval(mytime, 3000)
+
+
+        function mytime() {
+            var d = new Date();
+            console.log(d);
+        }
+        function dung() {
+            clearInterval(time);
+            console.log('so sau khi dung', time);
+        }
+        function tiep() {
+            time = setInterval(mytime, 5000)
+            console.log('sau khi tiep ', time);
+        }
+        function clickkk() {
+            mytime();
+            clearInterval(time);
+            time = setInterval(mytime, 5000)
+
+        }
+
+    </script>
+</body>
+
+</html>
